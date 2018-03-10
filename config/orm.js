@@ -30,7 +30,7 @@ function objToSql(ob) {
       }
       // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
       // e.g. {sleepy: true} => ["sleepy=true"]
-      arr.push(key + "=" + value);
+      arr.push(key + " = " + value);
     }
   }
 
@@ -70,6 +70,7 @@ var orm = {
     });
   },
   update: function(table, objColVals, condition, cb) {
+    console.log(objColVals);
     var queryString = "UPDATE " + table;
 
     queryString += " SET ";

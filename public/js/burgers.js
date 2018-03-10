@@ -1,11 +1,16 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-  $(".change-devoured").on("click", function(event) {
+  $(".change-devour").on("click", function(event) {
+    console.log("devouring burger...");
     var id = $(this).data("id");
-    var newDevoured = $(this).data("devoured");
-
-    var newDevouredState = {
-      devoured: newDevoured
+    console.log("ID is: ", id);
+    var newDevoured = $(this).data("newdevour");
+    console.log(newDevoured);
+    console.log($(this).data(), "is this.data");
+    if (newDevoured === 0) {
+      var newDevouredState = {
+      devoured: 1
+      };
     };
 
     // Send the PUT request.
@@ -14,7 +19,7 @@ $(function() {
       data: newDevouredState
     }).then(
       function() {
-        console.log("changed Devoured to", newDevoured);
+        console.log("changed Devoured to", newDevouredState);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -27,7 +32,7 @@ $(function() {
 
     var newBurger = {
       burger_name: $("#burg").val().trim(),
-      devoured: $("[name=devoured]:checked").val().trim()
+      devoured: 0
     };
 
     // Send the POST request.
