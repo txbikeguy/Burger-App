@@ -1,7 +1,17 @@
-li {
+#uneaten {
   padding: 5px;
   margin: 5px;
   font: bold;
+  background: white;
+  border-radius: 5px;
+}
+
+#eaten {
+	padding: 5px;
+	margin: 5px;
+	font: bold;
+	background: gray;
+	border-radius: 5px;
 }
 
 .label {
@@ -22,10 +32,6 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-#eaten {
-	background: gray;
 }
 
 body {
