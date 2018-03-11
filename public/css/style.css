@@ -12,6 +12,7 @@
 	font-size: 3.5vmin;
 	background: #6c757d;
 	border-radius: 5px;
+  text-decoration: line-through;
 }
 
 .label {
