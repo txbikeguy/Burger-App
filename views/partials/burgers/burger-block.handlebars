@@ -1,10 +1,12 @@
-<li id="uneaten">
-	{{burger_name}}
+<div>	
+	<li id="uneaten">
+		{{burger_name}}
 
-	<button class="change-devour btn-secondary" data-id="{{id}}" data-newdevour=0>
-		{{#if devoured}}EAT ME!{{else}}JK I never ate that!{{/if}}
-	</button>
-
-	<button class="delete-burger btn-danger" data-id="{{this.id}}">DELETE!</button>
-</li>
+		<button type="button" class="change-devour btn btn-secondary" data-id="{{id}}" data-newdevour=0>
+			{{#if devoured}}EAT ME!{{else}}JK I never ate that!{{/if}}
+		</button>
+	
+		<button type="button" class="delete-burger btn btn-danger" data-id="{{this.id}}">DELETE!</button>
+	</li>
+</div>
  

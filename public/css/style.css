@@ -1,7 +1,7 @@
 #uneaten {
   padding: 5px;
   margin: 5px;
-  font: bold;
+  font-size: 3vmin;
   background: white;
   border-radius: 5px;
 }
@@ -9,8 +9,8 @@
 #eaten {
 	padding: 5px;
 	margin: 5px;
-	font: bold;
-	background: gray;
+	font-size: 3.5vmin;
+	background: #6c757d;
 	border-radius: 5px;
 }
 
@@ -41,4 +41,20 @@ body {
 #burgie {
 	max-height: 300px;
 	width: auto;
+}
+
+#form {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#header {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#eat-btn {
+}
+
+#del-btn {
 }
