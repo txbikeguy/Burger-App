@@ -58,3 +58,12 @@ body {
 
 #del-btn {
 }
+
+.footer {
+  background: #6c757d;
+  height: 40px;
+}
+
+a {
+  color: white;
+}
