@@ -1,6 +1,9 @@
 {
   "name": "burger-app",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.11.4"
+  },
   "description": "A node/express application that lets a user add burgers to a list and then take them off or \"eat\" them.",
   "main": "server.js",
   "scripts": {
