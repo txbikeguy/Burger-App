@@ -1,6 +1,6 @@
 # Burger-Madness
 
-**Currently experiencing problems with heroku, so this app is not actively deployed, fix in the works.**
+**Currently experiencing problems with heroku, so this app is not actively deployed. Heroku dynos need to be restarted about every hour or app crashes. Fix in the works.**
 
 This is a web app made using node, express, handlebars.js, mySQL, and deployed to heroku, where the user can add their own burgers to the available menu, then also choose which burgers to eat, which will move them to the "Devoured Burgers" column. 
 
